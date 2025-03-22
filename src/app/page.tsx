@@ -25,7 +25,7 @@ export default function HomePage() {
           }}
         >
           <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
-            Hello, I'm Emily Boylan
+            Hello, I&apos;m Emily Boylan
           </h1>
           <p style={{ marginBottom: '1.5rem' }}>
             Music Producer &amp; Audio Engineer

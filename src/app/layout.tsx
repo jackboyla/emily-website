@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import './globals.css'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 // (Optional) If you want a Google Font
 // import { Inter } from 'next/font/google'
@@ -25,10 +26,10 @@ export default function RootLayout({
       <body>
         <header style={{ padding: '1rem', borderBottom: '1px solid #ddd' }}>
           <nav style={{ display: 'flex', gap: '1rem' }}>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/portfolio">Portfolio</Link>
+            <Link href="#contact">Contact</Link>
           </nav>
         </header>
 

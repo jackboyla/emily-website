@@ -6,7 +6,7 @@ export default function PortfolioPage() {
   
         {/* Track #1 */}
         <div style={{ marginBottom: '2rem' }}>
-          <h3>"Future Dreams"</h3>
+          <h3>&quot;Future Dreams&quot;</h3>
           <p>An electronic-inspired piece with lush synths and layered percussion.</p>
           <audio controls style={{ marginTop: '0.5rem' }}>
             <source src="/audio/future-dreams.mp3" type="audio/mpeg" />
@@ -16,7 +16,7 @@ export default function PortfolioPage() {
   
         {/* Track #2 */}
         <div style={{ marginBottom: '2rem' }}>
-          <h3>"Urban Flow"</h3>
+          <h3>&quot;Urban Flow&quot;</h3>
           <p>Hip-hop meets chill jazz, perfect for studying or relaxing.</p>
           <audio controls style={{ marginTop: '0.5rem' }}>
             <source src="/audio/urban-flow.mp3" type="audio/mpeg" />
