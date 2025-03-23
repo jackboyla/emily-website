@@ -2,9 +2,27 @@
 export default function PortfolioPage() {
   return (
     <section style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+      {/* Page Title */}
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Music Portfolio</h1>
-      <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Pres play on any of the tracks below to hear some of my work. After pressing play the audio may take a few seconds to load!🤗</h2>
       
+      {/* Info Bar */}
+      <div
+        style={{
+          backgroundColor: '#fffae6',      // A light yellow background
+          border: '1px solid #ffe58f',     // Slightly darker border
+          padding: '1rem',
+          borderRadius: '4px',
+          textAlign: 'center',
+          marginBottom: '2rem',
+        }}
+      >
+        <strong>Hello!👋</strong> Press play on any of the tracks below to hear some of my work.
+        After pressing play, the audio may take a few seconds to load! 🤗
+        <br />
+        <br />
+        Thanks for listening!
+      </div>
+
       {/* Haydn String Quartet Mix Section */}
       <div style={{ marginBottom: '4rem' }}>
         <h2 style={{ marginBottom: '1rem' }}>Haydn String Quartet Mix</h2>
