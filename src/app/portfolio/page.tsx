@@ -1,4 +1,3 @@
-// src/app/portfolio/page.tsx
 export default function PortfolioPage() {
   return (
     <section style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
@@ -72,7 +71,7 @@ export default function PortfolioPage() {
       </div>
       
       {/* Boylan Emily Masters Section */}
-      <div>
+      <div style={{ marginBottom: '4rem' }}>
         <h2 style={{ marginBottom: '1rem' }}>Boylan Emily Masters</h2>
         <p style={{ marginBottom: '1rem' }}>
           Dive into a series of master tracks that showcase a range of moods and sonic textures. 
@@ -126,6 +125,50 @@ export default function PortfolioPage() {
             style={{ border: 'none', marginBottom: '1rem' }}
           ></iframe>
         </div>
+      </div>
+
+      <div>
+        <h2 style={{ marginBottom: '1rem' }}>Scoring</h2>
+        <p style={{ marginBottom: '1rem' }}>
+          Explore my other creative works including video projects and compositions.
+        </p>
+
+        {/* Blair_Witch_Project_Composition - a WAV audio file */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ marginBottom: '0.5rem' }}>Blair Witch Project Composition</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1F9TTjF_ZUYSUINF8RlGS-A5R3rY_RsXx/preview"
+            width="100%"
+            height="80"
+            allow="autoplay"
+            style={{ border: 'none', marginBottom: '1rem' }}
+          ></iframe>
+        </div>
+        
+        {/* SD_2_Boylan_Emily_QT - a MOV video */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ marginBottom: '0.5rem' }}>SD 2 - Boylan Emily QT</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1Oecja6nnP5bnvTCQsAx-1XC_qNRipLV5/preview"
+            width="100%"
+            height="480"
+            allow="autoplay"
+            style={{ border: 'none', marginBottom: '1rem' }}
+          ></iframe>
+        </div>
+        
+        {/* MI_2_Boylan_Emily_Movie - a MOV video */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ marginBottom: '0.5rem' }}>MI 2 - Boylan Emily Movie</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1AYq7xjBJFuh_7qPtrAC_9KknSovl-MsD/preview"
+            width="100%"
+            height="480"
+            allow="autoplay"
+            style={{ border: 'none', marginBottom: '1rem' }}
+          ></iframe>
+        </div>
+
       </div>
     </section>
   );
