@@ -1,7 +1,5 @@
-// src/app/page.tsx
-'use client' // if you plan on using any client-side interactivity
-
-import Link from 'next/link'
+'use client';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -47,7 +45,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact Section (on the homepage for convenience) */}
+      {/* Contact Section */}
       <section
         id="contact"
         style={{
@@ -57,66 +55,39 @@ export default function HomePage() {
         }}
       >
         <h2>Contact Me</h2>
-        <p>Want to collaborate or just say hi? Drop a message!</p>
-
-        <form
-          style={{
-            display: 'inline-block',
-            textAlign: 'left',
-            maxWidth: '400px',
-            width: '100%',
-            marginTop: '1rem',
-          }}
-          onSubmit={(e) => {
-            e.preventDefault()
-            alert('Form submitted! (Replace with real handler)')
-          }}
-        >
-          <label htmlFor="name" style={{ fontWeight: 'bold' }}>
-            Name:
-          </label>
-          <input
-            type="text"
-            id="name"
-            required
-            style={{ width: '100%', marginBottom: '1rem', padding: '0.5rem' }}
-          />
-
-          <label htmlFor="email" style={{ fontWeight: 'bold' }}>
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            required
-            style={{ width: '100%', marginBottom: '1rem', padding: '0.5rem' }}
-          />
-
-          <label htmlFor="message" style={{ fontWeight: 'bold' }}>
-            Message:
-          </label>
-          <textarea
-            id="message"
-            rows={5}
-            required
-            style={{ width: '100%', marginBottom: '1rem', padding: '0.5rem' }}
-          />
-
-          <button
-            type="submit"
+        <p>
+          Want to collaborate or just say hi? Connect with me on LinkedIn or Instagram.
+        </p>
+        <div style={{ marginTop: '1rem' }}>
+          <a
+            href="https://www.linkedin.com/in/emily-boylan-244272257"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
-              backgroundColor: '#333',
-              color: '#fff',
-              padding: '0.7rem 1.2rem',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
+              marginRight: '1.5rem',
+              fontWeight: 'bold',
+              textDecoration: 'none',
+              color: '#0e76a8',
+              fontSize: '1.2rem',
             }}
           >
-            Send
-          </button>
-        </form>
+            LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/emily__boylan"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontWeight: 'bold',
+              textDecoration: 'none',
+              color: '#E4405F',
+              fontSize: '1.2rem',
+            }}
+          >
+            Instagram
+          </a>
+        </div>
       </section>
     </>
-  )
+  );
 }
