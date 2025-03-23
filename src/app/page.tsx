@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 export default function HomePage() {
   return (
@@ -58,33 +59,45 @@ export default function HomePage() {
         <p>
           Want to collaborate or just say hi? Connect with me on LinkedIn or Instagram.
         </p>
-        <div style={{ marginTop: '1rem' }}>
+        <div
+          style={{
+            marginTop: '1rem',
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+          }}
+        >
           <a
             href="https://www.linkedin.com/in/emily-boylan-244272257"
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              marginRight: '1.5rem',
-              fontWeight: 'bold',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
               textDecoration: 'none',
-              color: '#0e76a8',
-              fontSize: '1.2rem',
             }}
           >
-            LinkedIn
+            <FaLinkedin size={40} color="#0e76a8" />
+            <span style={{ marginTop: '0.5rem', fontWeight: 'bold', color: '#0e76a8' }}>
+              LinkedIn
+            </span>
           </a>
           <a
             href="https://www.instagram.com/emily__boylan"
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              fontWeight: 'bold',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
               textDecoration: 'none',
-              color: '#E4405F',
-              fontSize: '1.2rem',
             }}
           >
-            Instagram
+            <FaInstagram size={40} color="#E1306C" />
+            <span style={{ marginTop: '0.5rem', fontWeight: 'bold', color: '#E1306C' }}>
+              Instagram
+            </span>
           </a>
         </div>
       </section>
